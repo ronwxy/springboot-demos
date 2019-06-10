@@ -4,6 +4,5 @@
 
 ### 欢迎关注公众号，及时获取最新分享
 
-<div align=center>
-    ![微信公众号](http://pso1tuwfq.bkt.clouddn.com/qrcode.jpg)
-</div>
+
+![微信公众号](http://pso1tuwfq.bkt.clouddn.com/qrcode.jpg)
