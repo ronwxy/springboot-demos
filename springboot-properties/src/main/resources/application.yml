@@ -1,0 +1,7 @@
+my:
+  name: jboost@yml
+  website: blog.jboost.cn@yml
+
+spring:
+  profiles:
+    active: dev
