@@ -3,14 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
+        <groupId>cn.jboost.springboot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>1.2-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.jboost.springboot</groupId>
     <artifactId>springboot-tkmapper</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
     <name>springboot-tkmapper</name>
     <description>Demo project for Spring Boot</description>
 
@@ -19,38 +17,38 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-
         <!--<dependency>-->
-            <!--<groupId>cn.jboost.springboot</groupId>-->
-            <!--<artifactId>tkmapper-spring-boot-starter</artifactId>-->
-            <!--<version>1.2-SNAPSHOT</version>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter</artifactId>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>cn.jboost.springboot</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.2-SNAPSHOT</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-web</artifactId>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-test</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>org.springframework.boot</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>spring-boot-starter-jdbc</artifactId>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>cn.jboost.springboot</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>tkmapper-spring-boot-starter</artifactId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<version>1.2-SNAPSHOT</version>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>cn.jboost.springboot</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>druid-spring-boot-starter</artifactId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<version>1.2-SNAPSHOT</version>&ndash;&gt;-->
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
 
         <dependency>
             <groupId>mysql</groupId>
@@ -58,11 +56,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-            <groupId>cn.jboost.springboot</groupId>
-            <artifactId>spring-boot-commons</artifactId>
-            <version>1.2-SNAPSHOT</version>
-        </dependency>
 
     </dependencies>
 
