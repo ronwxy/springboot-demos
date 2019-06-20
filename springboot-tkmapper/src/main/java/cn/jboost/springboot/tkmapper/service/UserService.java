@@ -3,6 +3,7 @@ package cn.jboost.springboot.tkmapper.service;
 import cn.jboost.springboot.autoconfig.tkmapper.service.BaseService;
 import cn.jboost.springboot.tkmapper.domain.User;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /***
  * @Desc
@@ -11,4 +12,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService extends BaseService<Integer, User> {
+
+    @Transactional
+    public void createWithTransaction(User user){
+        create(user);
+        throw new RuntimeException("抛出异常，让前面的数据库操作回滚");
+    }
 }

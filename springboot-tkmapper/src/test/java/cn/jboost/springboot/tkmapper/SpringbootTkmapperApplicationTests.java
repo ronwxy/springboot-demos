@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 import java.util.Map;
@@ -43,7 +42,20 @@ public class SpringbootTkmapperApplicationTests {
 
         userService.create(user);
 
-        Assert.assertEquals(1, userService.countByExample(new Example(User.class)));
+        Assert.assertNotNull(user.getId());
+    }
+
+    @Test
+    public void testTransaction(){
+        User user = new User();
+        user.setName("jboost");
+        user.setGender(User.Gender.M);
+        try {
+            userService.createWithTransaction(user);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        Assert.assertNotNull(userService.selectByPk(user.getId()));
     }
 
 }

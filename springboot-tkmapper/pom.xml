@@ -26,6 +26,11 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
@@ -35,9 +40,15 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>cn.jboost.springboot</groupId>-->
+            <!--<artifactId>tkmapper-spring-boot-starter</artifactId>-->
+            <!--<version>1.2-SNAPSHOT</version>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>cn.jboost.springboot</groupId>
-            <artifactId>tkmapper-spring-boot-starter</artifactId>
+            <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.2-SNAPSHOT</version>
         </dependency>
 
