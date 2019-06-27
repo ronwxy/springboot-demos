@@ -16,6 +16,7 @@ public class UserService extends BaseService<Integer, User> {
     @Transactional
     public void createWithTransaction(User user){
         create(user);
+        //用于测试事务
         throw new RuntimeException("抛出异常，让前面的数据库操作回滚");
     }
 }

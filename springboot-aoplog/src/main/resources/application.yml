@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aoplog-test
+
+logger:
+  path: D:\logs #默认当前项目路径下的logs目录
+  level: info # 默认info
+  apiPackage: cn.jboost.springboot.aoplog.controller #必须配置, api接口类所在包
+  rootPackage: cn.jboost.springboot #必须配置，根包，记录该包内各类通过slf4j输出的日志
