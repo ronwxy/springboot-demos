@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: swagger-test
+
+  profiles:
+    active: dev
+
+swagger:
+  api-title: Demo标题
+  api-description:  Demo描述，集中注册
+  group-name: Demo群组
+  apis-base-package: cn.jboost.springboot.swagger
+  swagger-register-url: http://192.168.40.208:11090/swagger/register
+
+# 开启跨域支持
+cors:
+  enable: true

@@ -1,6 +1,9 @@
 server:
   port: 8080
 
+cors:
+  enable: true
+
 spring:
   datasource:
     druid:
