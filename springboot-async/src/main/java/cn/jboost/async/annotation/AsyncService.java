@@ -15,4 +15,9 @@ public class AsyncService {
     public void asyncMethod(){
         System.out.println("2. running in thread: " + Thread.currentThread().getName());
     }
+
+    @Async
+    public void asyncMethodWithException() {
+        throw new RuntimeException("exception in async method");
+    }
 }

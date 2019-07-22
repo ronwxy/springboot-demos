@@ -22,6 +22,15 @@ public class AnnotationBasedAsyncTest {
     public void testAsync() throws InterruptedException {
         System.out.println("1. running in thread: " + Thread.currentThread().getName());
         asyncService.asyncMethod();
+
+        Thread.sleep(3);
+    }
+
+    @Test
+    public void testAysncWithException() throws InterruptedException {
+        System.out.println("1. running in thread: " + Thread.currentThread().getName());
+        asyncService.asyncMethodWithException();
+
         Thread.sleep(3);
     }
 }
