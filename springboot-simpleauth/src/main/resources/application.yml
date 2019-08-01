@@ -3,7 +3,7 @@ spring:
     host: localhost
     port: 6379
     database: 0
-    password: 123456
+    password: 123654
     timeout: 3000
     jedis:
       pool:
