@@ -27,7 +27,7 @@ public class RedisTokenManager {
         //使用uuid作为源token
         String token = Jwts.builder().setId(userId).setIssuedAt(new Date()).signWith(SignatureAlgorithm.HS256, JwtConstant.JWT_SECRET).compact();
         //存储到redis并设置过期时间
-        redisTemplate.boundValueOps(userId).set(token, JwtConstant.TOKEN_EXPIRES_HOUR, TimeUnit.HOURS);
+        redisTemplate.boundValueOps(JwtConstant.AUTHORIZATION + ":" + userId).set(token, JwtConstant.TOKEN_EXPIRES_HOUR, TimeUnit.HOURS);
         return token;
     }
 
@@ -35,7 +35,7 @@ public class RedisTokenManager {
         if (model == null) {
             return false;
         }
-        String token = redisTemplate.boundValueOps(model.getUserId()).get();
+        String token = redisTemplate.boundValueOps(JwtConstant.AUTHORIZATION + ":" + model.getUserId()).get();
         if (token == null || !token.equals(model.getToken())) {
             return false;
         }
