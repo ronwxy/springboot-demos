@@ -5,4 +5,4 @@
 ### 欢迎关注公众号，及时获取最新分享
 
 
-![微信公众号](http://pso1tuwfq.bkt.clouddn.com/qrcode.jpg)
+![微信公众号](http://blog.jboost.cn/assets/qrcode-05.jpg)
