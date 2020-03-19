@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: redis-sentinel-demo
+
+  redis:
+    password: passw0rd
+    timeout: 5000
+    sentinel:
+      master: mymaster
+      nodes: 192.168.40.201:26379,192.168.40.201:36379,192.168.40.201:46379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1s
+        max-idle: 8
+        min-idle: 0
+server:
+  port: 8080

@@ -1,6 +1,6 @@
 package cn.jboost.springboot.aoplog.controller;
 
-import com.github.nickvl.xspring.core.log.aop.annotation.LogInfo;
+import cn.jboost.springboot.logging.annotation.LogInfo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

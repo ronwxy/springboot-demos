@@ -10,6 +10,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springboot-simpleauth</module>
+        <module>springboot-mybatisplus</module>
+        <module>springboot-redis-sentinel</module>
+        <module>springboot-redis-cluster</module>
     </modules>
 
 

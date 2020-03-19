@@ -1,6 +1,6 @@
 package cn.jboost.springboot.tkmapper.controller;
 
-import cn.jboost.springboot.autoconfig.web.controller.BaseController;
+import cn.jboost.springboot.autoconfig.mybatisplus.controller.BaseController;
 import cn.jboost.springboot.tkmapper.domain.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,5 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/user")
-public class UserController extends BaseController<Integer, User> {
+public class UserController extends BaseController<User> {
+
+//    @GetMapping("test")
+//    public List<User> query(@ModelAttribute User user, Page page){
+//
+//    }
 }

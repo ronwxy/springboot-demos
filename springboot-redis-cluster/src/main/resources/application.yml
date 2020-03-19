@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: redis-cluster-demo
+
+  redis:
+    password: passw0rd
+    timeout: 5000
+    database: 0
+    cluster:
+      nodes: 192.168.40.201:7100,192.168.40.201:7200,192.168.40.201:7300,192.168.40.201:7400,192.168.40.201:7500,192.168.40.201:7600
+      max-redirects: 3
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+server:
+  port: 8080

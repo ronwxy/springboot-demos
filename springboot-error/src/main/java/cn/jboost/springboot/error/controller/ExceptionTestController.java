@@ -1,6 +1,7 @@
 package cn.jboost.springboot.error.controller;
 
-import cn.jboost.springboot.autoconfig.error.exception.ExceptionUtil;
+
+import cn.jboost.springboot.common.exception.ExceptionUtil;
 import cn.jboost.springboot.error.util.ErrorCodeEnum;
 import com.google.common.collect.Maps;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +26,7 @@ public class ExceptionTestController {
     */
     @GetMapping("client")
     public void clientSideException(){
-        ExceptionUtil.rethrowClientSideException(ErrorCodeEnum.authorizer_notexist);
+        ExceptionUtil.rethrowClientSideException(ErrorCodeEnum.authorizer_notexist.getMsg());
     }
 
     /**
@@ -39,7 +40,7 @@ public class ExceptionTestController {
             throw new RuntimeException("运行时异常");
         } catch (Exception ex) {
             //这里不需要打日志，会统一在异常处理里记录日志
-            ExceptionUtil.rethrowServerSideException(ErrorCodeEnum.internal_error, ex);
+            ExceptionUtil.rethrowServerSideException(ErrorCodeEnum.internal_error.getMsg(), ex);
         }
     }
 
