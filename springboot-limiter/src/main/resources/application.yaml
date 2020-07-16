@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: limiter-demo
+  redis:
+    #数据库索引
+    database: 0
+    host: 192.168.40.92
+    port: 6379
+    password: Passw1rd
+    #连接超时时间
+    timeout: 2000

@@ -13,6 +13,7 @@
         <module>springboot-mybatisplus</module>
         <module>springboot-redis-sentinel</module>
         <module>springboot-redis-cluster</module>
+        <module>springboot-limiter</module>
     </modules>
 
 
