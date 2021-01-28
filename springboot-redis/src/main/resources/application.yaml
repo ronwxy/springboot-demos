@@ -1,0 +1,9 @@
+spring:
+  redis:
+    #数据库索引
+    database: 8
+    host: 192.168.40.92
+    port: 6379
+    password: Passw1rd
+    #连接超时时间
+    timeout: 2000

@@ -1,0 +1,6 @@
+spring:
+  security:
+    user:
+      name: jboost
+      password: jboost123
+      roles: admin
